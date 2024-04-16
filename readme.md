@@ -17,12 +17,16 @@ Follow these steps to set up the project:
 2. **Install Dependencies:**
 
 ```bash
+python -m env 
+(activate environment)
 pip install -r requirements.txt
-Database Configuration:
+
 ```
 
-3.  **Create a MySQL database named railway_management.Update the database configuration in config.py if necessary.**
-Database Migration:
+3.  **Database Configuration:**
+Create a MySQL database named railway_management.Update the database configuration in config.py if necessary.
+
+4.  **Database Migration:**
 
 ```bash
 flask db upgrade
