@@ -1,0 +1,117 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "irctc",
+    "dateExported": "2024-04-16T18:27:01.230Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "da9011b6-730c-4a2a-8cd6-2796cd24227b",
+            "colId": "038b389d-5c5c-40f1-a2f9-bdfb00d1894b",
+            "containerId": "",
+            "name": "http://127.0.0.1:5000/register",
+            "url": "http://127.0.0.1:5000/register",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-04-16T18:26:15.849Z",
+            "modified": "2024-04-16T18:26:15.849Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"username\": \"testuser1\",\r\n    \"password\": \"password123\",\r\n    \"role\": \"admin\"\r\n}\r\n",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "afc5c339-243c-488e-99de-2bf43a028202",
+            "colId": "038b389d-5c5c-40f1-a2f9-bdfb00d1894b",
+            "containerId": "",
+            "name": "https://www.thunderclient.com/trains",
+            "url": "http://127.0.0.1:5000/trains",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-04-16T18:26:26.085Z",
+            "modified": "2024-04-16T18:26:26.085Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"train_name\": \"Express\",\r\n    \"train_no\":12345,\r\n    \"source\": \"City A\",\r\n    \"destination\": \"City B\",\r\n    \"total_seats\":200\r\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcxMzI4ODIyOCwianRpIjoiMDExYmM0ZGEtY2RlMy00MTdjLTk0ZTItMjk3NWVmYjk2NWNhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJ1c2VybmFtZSI6InRlc3R1c2VyMSIsInJvbGUiOiJhZG1pbiJ9LCJuYmYiOjE3MTMyODgyMjgsImNzcmYiOiJkZjg1OWU1Yy03Y2FjLTRiNGMtOGUyZS0yZGIxZDJhMzI0YmYiLCJleHAiOjE3MTMyODkxMjh9.JXhkX1-cs-U6qyFs95OaVe1lI2oroO2-9X-zfvRuC20"
+            },
+            "tests": []
+        },
+        {
+            "_id": "3467a5fd-2537-42dc-b43b-f07dd2e3fe24",
+            "colId": "038b389d-5c5c-40f1-a2f9-bdfb00d1894b",
+            "containerId": "",
+            "name": "http://127.0.0.1:5000/availability?source=City A&destination=City B",
+            "url": "http://127.0.0.1:5000/availability?source=City A&destination=City B",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-04-16T18:26:32.835Z",
+            "modified": "2024-04-16T18:26:32.835Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "source",
+                    "value": "City A",
+                    "isPath": false
+                },
+                {
+                    "name": "destination",
+                    "value": "City B",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "45fbc47e-8e22-4d03-bbdb-b5053364b493",
+            "colId": "038b389d-5c5c-40f1-a2f9-bdfb00d1894b",
+            "containerId": "",
+            "name": "http://127.0.0.1:5000/book",
+            "url": "http://127.0.0.1:5000/book",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-04-16T18:26:43.009Z",
+            "modified": "2024-04-16T18:26:43.009Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"train_no\": 12345,\r\n    \"num_seats\": 2\r\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcxMzI5MDU3MCwianRpIjoiMDRmZDhlMzAtOTQ4Mi00YWM1LTliYTgtZmM1ODkyZGM4MjNlIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJ1c2VybmFtZSI6InRlc3R1c2VyMSIsInJvbGUiOiJhZG1pbiIsImlkIjoyfSwibmJmIjoxNzEzMjkwNTcwLCJjc3JmIjoiOWQxM2I4YjctZGMxNi00OTA1LTkyOGItNTc2OTMxOTFkYTNlIiwiZXhwIjoxNzEzMjkxNDcwfQ.st9r44D5FX-wcxNulOLqTR_jced2YW7tGgl1T1HmT6A"
+            },
+            "tests": []
+        },
+        {
+            "_id": "e3aaee89-ea5a-455c-aace-e85fa2bca1a0",
+            "colId": "038b389d-5c5c-40f1-a2f9-bdfb00d1894b",
+            "containerId": "",
+            "name": "http://127.0.0.1:5000/booking?booking_id=1",
+            "url": "http://127.0.0.1:5000/booking/1",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2024-04-16T18:26:50.717Z",
+            "modified": "2024-04-16T18:26:50.717Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcxMzI5MTY2MiwianRpIjoiZDFhMThkYzctMmJhMS00MjQ0LWEzNzItZmFiM2M3ZjI3MWFjIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJ1c2VybmFtZSI6InRlc3R1c2VyMSIsInJvbGUiOiJhZG1pbiIsImlkIjoyfSwibmJmIjoxNzEzMjkxNjYyLCJjc3JmIjoiMzQyNTU2NDQtZjQ0OC00MzUyLTg3MzAtMGZhNzFlNDIxOTZhIiwiZXhwIjoxNzEzMjkyNTYyfQ.yPV0sR5UA13IRhLW8xuZycSUobnrFW_B6ectyE0ShMQ"
+            },
+            "tests": []
+        }
+    ]
+}
